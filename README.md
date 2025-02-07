@@ -24,7 +24,7 @@ Add `loading_animation_widget:` to your `pubspec.yaml` dependencies then run `fl
  dependencies:
   loading_animation_widget:
     git:
-      url: https://github.com/felipendc/vicyos_music_wave_progress_flutter.git
+      url: https://github.com/felipendc/vicyos_music_loading_animation_widget.git
       ref: main
 ```
 #### Import
