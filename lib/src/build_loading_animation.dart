@@ -265,12 +265,18 @@ class LoadingAnimationWidget {
   /// Five dots expands one after another like wave and then come back to
   /// original. Required color is applied to all dots.
   static Widget staggeredDotsWave({
-    required Color color,
+     List<Color>? colors,
     required double size,
     Key? key,
   }) {
     return StaggeredDotsWave(
-      color: color,
+      colors: colors ?? [
+        const Color(0xffD9519D),
+        const Color(0xff657DDF),
+        const Color(0xffED8770),
+        Colors.blue[900]!,
+        const Color(0xff657DDF),
+      ],
       size: size,
       key: key,
     );

@@ -3,12 +3,12 @@ import 'package:loading_animation_widget/src/util/animation_controller_utils.dar
 
 class StaggeredDotsWave extends StatefulWidget {
   final double size;
-  final Color color;
+  final List<Color> colors;
 
   const StaggeredDotsWave({
     Key? key,
     required this.size,
-    required this.color,
+    required this.colors,
   }) : super(key: key);
 
   @override
@@ -50,7 +50,7 @@ class _StaggeredDotsWaveState extends State<StaggeredDotsWave>
               offsetInterval: const Interval(0.18, 0.28),
               reverseHeightInterval: const Interval(0.28, 0.38),
               reverseOffsetInterval: const Interval(0.47, 0.57),
-              color: widget.color,
+              color: widget.colors[0],
               size: widget.size,
               maxHeight: oddDotHeight,
             ),
@@ -60,7 +60,7 @@ class _StaggeredDotsWaveState extends State<StaggeredDotsWave>
               offsetInterval: const Interval(0.27, 0.37),
               reverseHeightInterval: const Interval(0.37, 0.47),
               reverseOffsetInterval: const Interval(0.56, 0.66),
-              color: widget.color,
+              color: widget.colors[1],
               size: widget.size,
               maxHeight: evenDotHeight,
             ),
@@ -70,7 +70,7 @@ class _StaggeredDotsWaveState extends State<StaggeredDotsWave>
               offsetInterval: const Interval(0.36, 0.46),
               reverseHeightInterval: const Interval(0.46, 0.56),
               reverseOffsetInterval: const Interval(0.65, 0.75),
-              color: widget.color,
+              color: widget.colors[2],
               size: widget.size,
               maxHeight: oddDotHeight,
             ),
@@ -80,7 +80,7 @@ class _StaggeredDotsWaveState extends State<StaggeredDotsWave>
               offsetInterval: const Interval(0.45, 0.55),
               reverseHeightInterval: const Interval(0.55, 0.65),
               reverseOffsetInterval: const Interval(0.74, 0.84),
-              color: widget.color,
+              color: widget.colors[3],
               size: widget.size,
               maxHeight: evenDotHeight,
             ),
@@ -90,7 +90,7 @@ class _StaggeredDotsWaveState extends State<StaggeredDotsWave>
               offsetInterval: const Interval(0.54, 0.64),
               reverseHeightInterval: const Interval(0.64, 0.74),
               reverseOffsetInterval: const Interval(0.83, 0.93),
-              color: widget.color,
+              color: widget.colors[4],
               size: widget.size,
               maxHeight: oddDotHeight,
             ),
