@@ -25,7 +25,7 @@ Add `loading_animation_widget:` to your `pubspec.yaml` dependencies then run `fl
   loading_animation_widget:
     git:
       url: https://github.com/felipendc/vicyos_music_loading_animation_widget.git
-      ref: main
+      ref: vicyos_main
 ```
 #### Import
 Add this line to import the package.
